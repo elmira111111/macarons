@@ -10,6 +10,7 @@ import VyborKolich from "./sobratNabor/vyborKolich/VyborKolich.jsx";
 const App = () => {
     return (
         <div>
+            <ReadySets/>
             <CardTovara />
             <InfoSection />
             <Cards/>
