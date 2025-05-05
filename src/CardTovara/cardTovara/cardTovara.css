@@ -35,7 +35,7 @@
     margin-top: -25px;
 }
 
-.title {
+.title-product {
     font-size: 30px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
@@ -43,7 +43,7 @@
     color: rgba(41, 41, 41, 1);
 }
 
-.subtitle {
+.subtitle-product {
     color: rgba(41, 41, 41, 1);
     font-size: 16px;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@
     opacity: 80%;
 }
 
-.flavors{
+.flavors-product{
     width: 570px;
     background: white;
     margin: auto;
@@ -114,7 +114,7 @@
     margin-top: 20px;
 }
 
-.price {
+.price-product {
     font-size: 24px;
     color: rgba(231, 66, 106, 1);
     font-weight: 600;

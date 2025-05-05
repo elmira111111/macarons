@@ -22,10 +22,10 @@ const CardTovara = () => {
                 </div>
 
                 <div className="info-section">
-                    <h1 className="title">Сердце</h1>
-                    <p className="subtitle">40 макаронс в круглой коробке с персональной надписью</p>
+                    <h1 className="title-product">Сердце</h1>
+                    <p className="subtitle-product">40 макаронс в круглой коробке с персональной надписью</p>
 
-                    <div className="flavors">
+                    <div className="flavors-product">
                         <h3>Вкусы:</h3>
                         <ul>
                             <li>Яблоко <span>4 шт.</span></li>
@@ -35,7 +35,7 @@ const CardTovara = () => {
                     </div>
 
                     <div className="price-section">
-                        <p className="price">2800 сом</p>
+                        <p className="price-product">2800 сом</p>
                         <button className="add-to-cart"><img src={korzinaBasket} alt=""/>В корзину</button>
                     </div>
 

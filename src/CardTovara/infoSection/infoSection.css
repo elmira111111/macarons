@@ -1,4 +1,4 @@
-.tabs-container {
+.info-container {
     background-color: #fff;
     border-radius: 12px;
     padding: 22px 24px 50px 24px;
@@ -10,14 +10,14 @@
     margin-top: 36px;
 }
 
-.tabs-header {
+.info-header {
     display: flex;
     gap: 32px;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
 }
 
-.tab {
+.info {
     background: none;
     border: none;
     padding-bottom: 12px;
@@ -28,15 +28,15 @@
     transition: color 0.2s ease;
 }
 
-.tab:hover {
+.info:hover {
     color: #d81b60;
 }
 
-.tab.active {
+.info.active {
     font-weight: 600;
 }
 
-.tab.active::after {
+.info.active::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -47,14 +47,14 @@
     border-radius: 2px;
 }
 
-.tab-content {
+.info-content {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
     padding: 40px 0 0 0;
 }
 
-.tab-content p {
+.info-content p {
     font-family: "ProximaNova-reg-16", sans-serif;
     font-size: 16px;
     color: rgba(41, 41, 41, 1);

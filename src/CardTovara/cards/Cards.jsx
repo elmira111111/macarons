@@ -92,7 +92,7 @@ const Cards = () => {
                     slidesPerView={4}
                     loop={true}
                     autoplay={{
-                        delay: 3000000,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     navigation={{
