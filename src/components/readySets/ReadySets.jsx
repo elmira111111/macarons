@@ -111,16 +111,6 @@ const macarons = [
          icon: <i className="bi bi-bag"></i>,
         button: 'В корзину'
     },
-     
-     
-      
-        
-       
-
-      
-    
-    
-
 ]
 
 const ReadySets = () => {
