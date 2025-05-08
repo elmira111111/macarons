@@ -11,3 +11,15 @@
 body{
     background: rgba(247, 247, 247, 1);
 }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNova-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+    font-size: 16px;
+}

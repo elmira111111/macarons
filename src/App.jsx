@@ -7,6 +7,7 @@ import WeddingCards from "./forWeddings/weddingCards/WeddingCards.jsx";
 import Korzina from "./korzina/Korzina.jsx";
 import VyborKolich from "./sobratNabor/vyborKolich/VyborKolich.jsx";
 import ReadySets from "./components/readySets/ReadySets.jsx";
+import VyborVkusy from "./sobratNabor/vyborVkusy/VyborVkusy.jsx";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
             <WeddingCards />
             <Korzina />
             <VyborKolich/>
+            <VyborVkusy/>
         </div>
     );
 };

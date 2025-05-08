@@ -1,9 +1,9 @@
-.cart {
+.cart-korzina {
     padding: 30px;
     background-color: #f9f9f9;
 }
 
-h1 {
+.title-korzina {
     font-size: 30px;
     margin-bottom: 9px;
     font-weight: 600;
@@ -11,7 +11,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
 }
 
-.subtitle {
+.subtitle-korzina {
     color: rgba(41, 41, 41, 1);
     font-size: 16px;
     margin-bottom: 34px;
@@ -20,31 +20,33 @@ h1 {
     font-weight: 400;
 }
 
-.cart-container {
+.cart-korzina-container {
     display: flex;
     gap: 20px;
 }
 
-.cart-items {
+.cart-items-korzina {
     flex: 2;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 20px 0 20px 17px;
+    border-radius: 3px;
+    border: 1px solid rgba(237, 237, 240, 1);
 }
 
-.item {
+.item-korzina {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(237, 237, 240, 1);
+    padding-bottom: 5px;
 }
 
-.product-img {
+.cart-korzina-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
     margin-right: 15px;
+    margin-top: 25px;
 }
 
 .img-placeholder {
@@ -54,138 +56,200 @@ h1 {
     margin-right: 15px;
 }
 
-.details h2 {
-    font-size: 16px;
-    margin: 0 0 5px;
-}
-
-.details p {
+.details-korzina h2 {
     font-size: 14px;
-    color: #333;
+    margin: 0 0 8px;
+    align-items: center;
+    justify-content: center;
+    color: #292929;
+    width: 270px;
 }
 
-.gift {
-    color: #ff5b77;
+.details-korzina p {
     font-size: 12px;
+    font-family: "ProximaNova", sans-serif;
+    color: #535353;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.details-korzina .gift-korzina {
+    color: rgba(231, 66, 106, 1);
+    font-size: 13px;
+    font-weight: 600;
     margin-top: 5px;
 }
 
-.quantity-control {
+.quantity-control-korzina {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: 20px;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 85px;
+
 }
 
-.quantity-control button {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #ccc;
+.quantity-control-korzina button {
+    width: 23px;
+    height: 22px;
+    align-items: center;
+    border: 1px solid rgba(41, 41, 41, 0.1);
     background: white;
+    border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.quantity-control span {
+.quantity-control-korzina span {
     margin: 0 8px;
     font-size: 16px;
+    align-items: center;
+    font-family: "ProximaNova", sans-serif;
 }
 
-.price-info {
+.price-info-korzina {
     text-align: right;
     min-width: 90px;
+    margin: auto;
 }
 
-.price-info p {
-    margin: 2px 0;
-}
-
-.price-info span {
+.price-info-korzina p {
+    margin: 2px 0 40px;
+    font-size: 14px;
     font-weight: bold;
 }
 
-.discount {
-    color: #ff5b77;
-    font-size: 13px;
-}
-
-.total-text {
-    text-align: right;
+.price-info-korzina span {
+    font-weight: bold;
     font-size: 14px;
-    margin-top: 15px;
+    color: #d81b60;
 }
 
-.total-text .highlighted {
+.discount-korzina {
+    font-size: 14px;
+    font-weight: bold;
+    /*margin-bottom: -199px;*/
+    span{
+        color: #d81b60;
+        font-size: 14px;
+    }
+}
+
+.total-text-korzina {
+    text-align: left;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+}
+
+.total-text-korzina .highlighted-korzina {
     color: #ff0050;
     font-weight: bold;
     margin-left: 5px;
+    text-align: right;
 }
 
-.total-text .crossed {
+.total-text-korzina .crossed-korzina {
     text-decoration: line-through;
     color: #aaa;
     margin-left: 10px;
 }
 
-.summary {
-    flex: 1;
-    background: white;
+.summary-korzina {
+    background: #fff;
+    border-radius: 3px;
     padding: 20px;
-    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333;
+    width: 473px;
+    height: 369px;
+    border: 1px solid rgba(237, 237, 240, 1);
 }
 
-.summary h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
+.summary-korzina h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+    font-family: "Montserrat", sans-serif;
 }
 
-.summary-line,
-.summary-total {
+.summary-line-korzina {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.summary-total {
-    font-weight: bold;
+    align-items: center;
     font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 8px;
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 400;
+    color: #434141;
 }
 
-.promo-code {
+.summary-total-korzina {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
     margin: 20px 0;
 }
 
-.promo-code input {
+.promo-code-korzina {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.promo-code-korzina input {
     flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 10px 12px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    color: #333;
+    margin-right: -2px;
+    background: #f8f8f8;
 }
 
-.promo-code button {
-    background: #f33c69;
-    color: white;
+.promo-code-korzina input::placeholder {
+    color: #ccc;
+}
+
+.promo-code-korzina button {
+    background: #e10056;
+    color: #fff;
     border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
 }
 
-.order-btn {
+.order-btn-korzina {
     width: 100%;
-    background: #f33c69;
-    color: white;
+    background: #e10056;
+    color: #fff;
     border: none;
-    padding: 12px;
+    border-radius: 8px;
+    padding: 14px 0;
     font-size: 16px;
-    border-radius: 4px;
+    font-weight: 500;
     cursor: pointer;
 }
 
-.together-deal {
+.summary-korzina > div:nth-child(2) {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+
+.together-deal-korzina {
     margin-top: 32px;
     background: white;
     border-radius: 10px;
@@ -193,7 +257,7 @@ h1 {
     box-shadow: 0 0 4px rgba(0,0,0,0.03);
 }
 
-.deal-header {
+.deal-header-korzina {
     background: linear-gradient(90deg, #ffe4e4, #fff);
     border-radius: 8px;
     padding: 12px 16px;
@@ -206,7 +270,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.deal-header .arrow {
+.deal-header-korzina .arrow-korzina {
     width: 60px;
     height: 20px;
     background: url('https://cdn-icons-png.flaticon.com/512/545/545705.png') no-repeat center;
@@ -214,18 +278,18 @@ h1 {
     opacity: 0.3;
 }
 
-.deal-item {
+.deal-item-korzina {
     display: flex;
     align-items: center;
     padding: 16px 0;
     border-top: 1px solid #eee;
 }
 
-.deal-item:first-of-type {
+.deal-item-korzina:first-of-type {
     border-top: none;
 }
 
-.deal-img {
+.deal-img-korzina {
     width: 72px;
     height: 72px;
     border-radius: 6px;
@@ -234,14 +298,14 @@ h1 {
     margin-right: 16px;
 }
 
-.deal-title {
+.deal-title-korzina {
     flex: 1;
     font-size: 15px;
     font-weight: 500;
     color: #333;
 }
 
-.deal-price {
+.deal-price-korzina {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -249,14 +313,14 @@ h1 {
     font-size: 14px;
 }
 
-.old-price {
+.old-price-korzina {
     text-decoration: line-through;
     color: #999;
     font-size: 14px;
     margin-bottom: 2px;
 }
 
-.new-price {
+.new-price-korzina   {
     color: #ff2e63;
     font-weight: 600;
 }

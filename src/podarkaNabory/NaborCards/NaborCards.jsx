@@ -147,8 +147,8 @@ const NaborCards = () => {
                                 <p>{item.description}</p>
                             </div>
                             <div className="nabor-bottom">
-                                <span className="price">{item.price}</span>
-                                <button className="cart-btn"><img src={basket} className={'nabor-basket'}
+                                <span className="price-nabor">{item.price}</span>
+                                <button className="cart-btn-nabor"><img src={basket} className={'nabor-basket'}
                                                                   style={{width: '13px', height: '19px'}} alt=""/> В
                                     корзину
                                 </button>
@@ -156,7 +156,7 @@ const NaborCards = () => {
                         </div>
                     ))}
                 </div>
-                <button className={'bottom-button'}>Показать ещё</button>
+                <button className={'bottom-button-nabor'}>Показать ещё</button>
             </div>
         </div>
     );

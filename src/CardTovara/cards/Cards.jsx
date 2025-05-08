@@ -75,7 +75,7 @@ const Cards = () => {
     }, []);
 
     return (
-        <div className="cards-wrapper container-app">
+        <div className="cards-wrapper-slider container-app">
             <h2>Вам могут понравиться</h2>
 
             <div ref={prevRef} className="custom-prev">
@@ -107,18 +107,18 @@ const Cards = () => {
                 >
                     {extendedCards.map((card) => (
                         <SwiperSlide key={card.id}>
-                            <div className="card">
-                                <img src={card.img} alt="" className={'card-img'} />
-                                <div className="card-content">
+                            <div className="card-slider">
+                                <img src={card.img} alt="" className={'card-img-slider'} />
+                                <div className="card-content-slider">
                                     <h3>{card.title}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: card.description }}></p>
                                 </div>
-                                <div className="price">
+                                <div className="price-slider">
                                     <div>
-                                        {card.oldPrice && <div className="old-price">{card.oldPrice}</div>}
-                                        <div className="new-price">{card.newPrice}</div>
+                                        {card.oldPrice && <div className="old-price-slider">{card.oldPrice}</div>}
+                                        <div className="new-price-slider">{card.newPrice}</div>
                                     </div>
-                                    <button className="btn-cards">
+                                    <button className="btn-cards-slider">
                                         <img src={basketBlack} className={'basket-icon'} alt=""/>В корзину
                                     </button>
                                 </div>
@@ -128,7 +128,7 @@ const Cards = () => {
                 </Swiper>
             )}
 
-            <button className="bottom-button">Все готовые наборы</button>
+            <button className="bottom-button-slider">Все готовые наборы</button>
         </div>
     );
 };

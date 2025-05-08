@@ -21,7 +21,7 @@ const CardTovara = () => {
                     </div>
                 </div>
 
-                <div className="info-section">
+                <div className="info-section-product">
                     <h1 className="title-product">Сердце</h1>
                     <p className="subtitle-product">40 макаронс в круглой коробке с персональной надписью</p>
 
@@ -34,12 +34,12 @@ const CardTovara = () => {
                         </ul>
                     </div>
 
-                    <div className="price-section">
+                    <div className="price-section-product">
                         <p className="price-product">2800 сом</p>
-                        <button className="add-to-cart"><img src={korzinaBasket} alt=""/>В корзину</button>
+                        <button className="add-to-cart-product"><img src={korzinaBasket} alt=""/>В корзину</button>
                     </div>
 
-                    <ul className="delivery-info">
+                    <ul className="delivery-info-product">
                         <li><img src={korzinaIcon1} alt=""/> Доставка от 400 руб. в день заказа с 12 до 17 или с 17 до
                             21. Бесплатно при заказе на
                             сумму от 2000 руб

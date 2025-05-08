@@ -20,14 +20,15 @@
 }
 
 .nabor-filters button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     background: rgba(247, 235, 229, 1);;
     border-radius: 24px;
     cursor: pointer;
     font-size: 14px;
+    font-family: "ProximaNova", sans-serif;
     font-weight: 400;
-    color: #333;
+    color: rgba(41, 41, 41, 0.83);
     transition: background 0.3s, border-color 0.3s;
 }
 
@@ -35,14 +36,15 @@
     background: #f0f0f0;
     border-color: #d5d5d5;
 }
+
 .nabor-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
 }
 .nabor-card {
-    border: 1px solid #eee;
-    border-radius: 12px;
+    border: 1px solid rgba(237, 237, 240, 1);
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -60,39 +62,41 @@
 }
 
 .nabor-card-info {
-    padding: 22px 0 30px 22px;
+    padding: 21px 0 30px 22px;
 }
 
 .nabor-card-info h3 {
     margin: 0 0 14px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: "Montserrat", sans-serif;
+    color: black;
 }
 
 .nabor-card-info p {
     margin: 0;
     font-size: 14px;
-    color: rgba(41, 41, 41, 1);
+    color: rgb(80, 80, 81);
     font-family: "ProximaNova", sans-serif;
     font-weight: 300;
+    line-height: 1.4;
 }
 
- .price .cart-btn .nabor-basket{
+ .price-nabor .cart-btn-nabor .nabor-basket{
     max-width: 13px;
     max-height: 19px;
 }
 
-.nabor-bottom {
+  .nabor-bottom {
     display: flex;
     border-top: 1px solid #eee;
     border-radius: 0 0 12px 12px;
     overflow: hidden;
-}
+  }
 
-.nabor-bottom .price {
+.nabor-bottom .price-nabor {
     flex: 1;
-    padding: 14px 72px 14px 12px;
+    padding: 14px 62px 14px 12px;
     font-size: 16px;
     font-weight: 500;
     color: rgba(231, 66, 106, 1);
@@ -101,10 +105,9 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-
 }
 
-.cart-btn {
+.cart-btn-nabor {
     flex: 1;
     padding: 12px;
     background: white;
@@ -120,6 +123,20 @@
     cursor: pointer;
 }
 
-.cart-btn:hover {
+.bottom-button-nabor{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 1px;
+    cursor: pointer;
+    border: 1px solid rgba(78, 157, 211, 1);
+    font-size: 14px;
+    font-weight: 500;
+    width: 289px;
+    height: 50px;
+}
+
+.cart-btn-nabor:hover {
     background-color: #f9f9f9;
 }

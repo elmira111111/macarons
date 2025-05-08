@@ -55,19 +55,19 @@ const naborData = [
 
 const WeddingCards = () => {
     return (
-        <div className="nabor-section container-app">
+        <div className="wedding-section container-app">
             <h2 className="wedding-title">Наборы для свадьбы</h2>
-            <div className="nabor-cards">
+            <div className="wedding-cards">
                 {naborData.map((item) => (
-                    <div className="nabor-card" key={item.id}>
+                    <div className="wedding-card" key={item.id}>
                         <img src={item.image} alt={item.title} />
-                        <div className="nabor-card-info">
+                        <div className="wedding-card-info">
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
                         </div>
-                        <div className="nabor-bottom">
-                            <span className="price">{item.price}</span>
-                            <button className="cart-btn"><img src={basket} className={'nabor-basket'} style={{width: '13px', height: '19px'}} alt=""/> В корзину</button>
+                        <div className="wedding-bottom">
+                            <span className="price-wedding">{item.price}</span>
+                            <button className="cart-btn-wedding"><img src={basket} className={'nabor-basket'} style={{width: '13px', height: '19px'}} alt=""/> В корзину</button>
                         </div>
                     </div>
                 ))}

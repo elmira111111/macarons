@@ -31,18 +31,18 @@ const InfoSection = () => {
 
     return (
         <div className="info-container container-app">
-            <div className="info-header">
+            <div className="info-header-section">
                 {["Описание", "Состав и пищевая ценность", "Условия и срок хранения"].map((tab) => (
                     <button
                         key={tab}
-                        className={`info ${activeTab === tab ? "active" : ""}`}
+                        className={`info-section ${activeTab === tab ? "active" : ""}`}
                         onClick={() => setActiveTab(tab)}
                     >
                         {tab}
                     </button>
                 ))}
             </div>
-            <div className="info-content">{renderContent()}</div>
+            <div className="info-content-section">{renderContent()}</div>
         </div>
     );
 };

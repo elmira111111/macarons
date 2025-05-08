@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-.info-section {
+.info-section-product {
     max-width: 570px;
     margin-top: -25px;
 }
@@ -40,6 +40,7 @@
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 11px;
+    text-align: left;
     color: rgba(41, 41, 41, 1);
 }
 
@@ -63,7 +64,7 @@
     border: 1px solid rgba(237, 237, 240, 1);
 }
 
-.flavors h3 {
+.flavors-product h3 {
     font-size: 18px;
     margin-bottom: 10px;
     padding-left: 27px;
@@ -71,14 +72,14 @@
     font-family: "Gom", sans-serif;
 }
 
-.flavors ul {
+.flavors-product ul {
     list-style: none;
     padding-left: 27px;
     padding-bottom: 24px;
     padding-right: 27px;
 }
 
-.flavors li {
+.flavors-product li {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -91,7 +92,7 @@
     border-bottom: 1px dashed rgba(237, 237, 240, 1);
 }
 
-.flavors span{
+.flavors-product span{
     color: rgba(41, 41, 41, 1);
     font-size: 16px;
     line-height: 22px;
@@ -99,12 +100,11 @@
 
 }
 
-.price-section {
+.price-section-product {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 27px 5px 27px;
-    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+    padding: 0 27px 0 27px;
     border: 1px solid rgba(237, 237, 240, 1);
     gap: 20px;
     height: 80px;
@@ -121,7 +121,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.add-to-cart {
+.add-to-cart-product {
     background-color: rgba(231, 66, 106, 1);
     width: 178px;
     height: 50px;
@@ -137,11 +137,11 @@
 
 }
 
-.add-to-cart:hover {
+.add-to-cart-product:hover {
     background-color: #d81b60;
 }
 
-.delivery-info {
+.delivery-info-product {
     list-style: none;
     padding: 0;
     font-size: 14px;
@@ -150,8 +150,8 @@
     margin-top: 25px;
 }
 
-.delivery-info li {
-    margin-bottom: 10px;
+.delivery-info-product li {
+    margin-bottom: 8px;
     display: flex;
     height: 46px;
     align-items: center;
@@ -161,7 +161,7 @@
     font-weight: 400;
     color: rgba(41, 41, 41, 1);
     img{
-        width: 46px;
-        height: 46px;
+        width: 44px;
+        height: 44px;
     }
 }

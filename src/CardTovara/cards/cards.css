@@ -1,15 +1,16 @@
-.cards-wrapper {
+.cards-wrapper-slider {
     font-family: sans-serif;
     padding: 20px;
     position: relative;
 }
 
-.cards-wrapper h2 {
+.cards-wrapper-slider h2 {
     text-align: center;
     font-size: 30px;
     width: 1170px;
     color: rgba(41, 41, 41, 1);
-    font-weight: 500;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 36px;
 }
 
@@ -17,7 +18,7 @@
     padding: 20px 0;
 }
 
-.card {
+.card-slider {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -27,7 +28,7 @@
     border: 1px solid rgba(237, 237, 240, 1);
 }
 
-.card-img {
+.card-img-slider {
     width: 100%;
     height: auto;
     display: block;
@@ -35,18 +36,20 @@
     -moz-border-radius-topleft: 5px;
 }
 
-.card-content {
-    padding: 22px 15px;
+.card-content-slider {
+    padding: 12px 15px 42px 15px;
+    opacity: 80%;
 }
 
-.card-content h3 {
+.card-content-slider h3 {
     margin: 10px 0 5px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
+    color: black;
 }
 
-.card-content p {
+.card-content-slider p {
     margin: 10px 0 0 0;
     font-size: 14px;
     color: rgba(41, 41, 41, 1);
@@ -54,14 +57,17 @@
     font-weight: 400;
     font-family: "ProximaNova", sans-serif;
     height: 60px;
+    letter-spacing: 0;
+    line-height: 1.5; /* добавили больше расстояния */
 }
 
-.price {
+
+.price-slider {
     display: flex;
     border-top: 1px solid rgba(237, 237, 240, 1);
 }
 
-.price > div {
+.price-slider > div {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -70,7 +76,7 @@
     border-right: 1px solid rgba(237, 237, 240, 1);
 }
 
-.old-price {
+.old-price-slider {
     text-decoration: line-through;
     color: gray;
     font-size: 14px;
@@ -78,13 +84,13 @@
     margin-top: 4px;
 }
 
-.new-price {
+.new-price-slider {
     color: #EF476F;
     font-size: 18px;
     font-weight: 500;
 }
 
-.btn-cards {
+.btn-cards-slider {
     flex: 1;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -105,7 +111,7 @@
     height: 19px;
 }
 
-.bottom-button {
+.bottom-button-slider {
     display: block;
     margin: 30px auto 0;
     padding: 10px 20px;
