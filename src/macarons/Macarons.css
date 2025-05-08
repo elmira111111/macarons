@@ -1,0 +1,158 @@
+.promotions-container {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.promotions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.promotions-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+}
+
+.add-button {
+    background-color: #ff4d4d;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #e04343;
+}
+
+.promotion-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.promotion-form.edit-mode input {
+    border: 1px solid #ff4d4d;
+}
+
+.promotion-form input {
+    background-color: pink;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.promotion-form input::placeholder {
+    color: black;
+}
+
+.promotions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.placeholder-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.promotion-item {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.promotion-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.promotion-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.promotion-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.promotion-weight,
+.promotion-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+
+.promotion-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #ff4d4d;
+    font-size: 18px;
+}
+
+.placeholder-item .action-button {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .promotion-form {
+        flex-direction: column;
+    }
+
+    .promotion-form input {
+        width: 100%;
+    }
+
+    .promotion-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .promotion-image {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+    }
+
+    .promotion-actions {
+        align-self: flex-end;
+    }
+}

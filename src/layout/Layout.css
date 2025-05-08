@@ -1,0 +1,41 @@
+.layout-container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #1C2526;
+    width: 200px;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-item.active {
+    background-color: #d0d0ff;
+    font-weight: bold;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

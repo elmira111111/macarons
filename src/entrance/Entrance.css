@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.entrance-container {
+    position: relative;
+    background-color: #ffe6e6;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.input-group label {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: normal;
+}
+
+.input-group input {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: normal;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    color: #ff4d4d;
+    text-align: right;
+    margin-top: -8px; /* Добавлено: поднимаем ссылку вверх */
+    margin-bottom: 16px; /* Можно уменьшить отступ снизу, если нужно */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; /* Добавлено для единообразия шрифта */
+}
+
+
+.entrance-button {
+    background-color: rgba(231, 66, 106, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.entrance-button:hover {
+    background-color: #e60000;
+}
+
+h2.custom-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
