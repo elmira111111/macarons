@@ -8,21 +8,32 @@ import Korzina from "./korzina/Korzina.jsx";
 import VyborKolich from "./sobratNabor/vyborKolich/VyborKolich.jsx";
 import ReadySets from "./components/readySets/ReadySets.jsx";
 import VyborVkusy from "./sobratNabor/vyborVkusy/VyborVkusy.jsx";
+import './App.css'
+import { RouterProvider } from 'react-router-dom'
+import { myRouter } from './router.jsx'
 
 const App = () => {
     return (
         <div>
-            <ReadySets/>
+            <ReadySets />
             <CardTovara />
             <InfoSection />
-            <Cards/>
+             <Cards/> 
             <NaborCards />
-            <Section1/>
+            <Section1 />
             <WeddingCards />
             <Korzina />
+            <Cards/>
             <VyborKolich/>
             <VyborVkusy/>
+            <VyborKolich />
+            <div className='wrapper'>
+                <RouterProvider router={myRouter} />
+            </div>
+
         </div>
+
+
     );
 };
 
