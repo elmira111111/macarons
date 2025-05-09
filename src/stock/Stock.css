@@ -19,8 +19,8 @@
 }
 
 .back-button {
-    background-color: #ff5c5c; /* Розовый фон */
-    color: #ffffff; /* Белый текст */
+    background-color: #ff5c5c;
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -28,17 +28,16 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Отступ снизу, чтобы кнопки не сливались */
+    margin-bottom: 20px;
 }
 
 .back-button:hover {
-    background-color: #e04f4f; /* Чуть темнее при наведении */
+    background-color: #e04f4f;
 }
 
-/* Стили для кнопки "Выйти" */
 .logout-button {
-    background-color: #ff5c5c; /* Такой же розовый фон, как у кнопки "Назад" */
-    color: #ffffff; /* Белый текст */
+    background-color: #ff5c5c;
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -46,14 +45,14 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px; /* Отступ между иконкой и текстом */
+    gap: 8px;
 }
 
 .logout-button:hover {
-    background-color: #e04f4f; /* Чуть темнее при наведении */
+    background-color: #e04f4f;
 }
 
 .exit-icon {
-    width: 20px; /* Размер иконки */
+    width: 20px;
     height: 20px;
 }
