@@ -1,51 +1,42 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+// // import CardTovara from "./CardTovara/cardTovara/CardTovara.jsx";
+// import InfoSection from "./CardTovara/infoSection/InfoSection.jsx";
+// // import Cards from "./CardTovara/cards/Cards.jsx";
+// import NaborCards from "./podarkaNabory/NaborCards/NaborCards.jsx";
+// import Section1 from "./forWeddings/section1/Section1.jsx";
+// import WeddingCards from "./forWeddings/weddingCards/WeddingCards.jsx";
+// import Korzina from "./korzina/Korzina.jsx";
+// import VyborKolich from "./sobratNabor/vyborKolich/VyborKolich.jsx";
+// import ReadySets from './components/readySets/ReadySets.jsx'
+import './App.css'
+import { RouterProvider } from 'react-router-dom'
+import { myRouter } from './router'
 
-// Layouts
-import Layout from './layout/Layout.jsx';           // Для админки
-import AuthLayout from './layout/AuthLayout.jsx';   // Для форм входа
+const App = () => {
+    return (
+        <div>
 
-// Админка
-import Home from '../src/home/Home.jsx';
-import Macarons from '../src/macarons/Macarons.jsx';
-import Glavhiy from '../src/glavhiy/Glavhiy.jsx';
-import Sets from '../src/sets/Sets.jsx';
-import News from '../src/news/News.jsx';
-import Profile from '../src/profile/Profile.jsx';
 
-// Авторизация
-import Entrance from './entrance/Entranse.jsx';
-import Forgot from './forgot/Forgot.jsx';
-import Password from './password/Password.jsx';
-import Code from './code/Code.jsx';
-import Create from './create/Create.jsx';
 
-const App = () => (
-    <Router>
-        <Routes>
-            {/* Авторизация */}
-            <Route element={<AuthLayout />}>
-                <Route path="/" element={<Entrance />} />
-                <Route path="/forgot" element={<Forgot />} />
-                <Route path="/password" element={<Password />} />
-                <Route path="/code" element={<Code />} />
-                <Route path="/create" element={<Create />} />
-            </Route>
+            <div className='wrapper'>
 
-            {/* Админка */}
-            <Route path="/admin" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="promo" element={<Macarons />} />
-                <Route path="stock" element={<Glavhiy />} />
-                <Route path="sets" element={<Sets />} />
-                <Route path="news" element={<News />} />
-                <Route path="profile" element={<Profile />} />
-            </Route>
+                <RouterProvider router={myRouter} />
 
-            {/* Редирект неизвестных путей */}
-            <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-    </Router>
-);
+            </div>
+            <ReadySets />
+            <CardTovara />
+            <InfoSection />
+            {/* <Cards/> */}
+            <NaborCards />
+            <Section1 />
+            <WeddingCards />
+            <Korzina />
+            <VyborKolich />
+
+
+        </div>
+
+
+    );
+};
 
 export default App;
