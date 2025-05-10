@@ -2,7 +2,7 @@ import React from 'react'
 import "./Contact.scss"
 import Macaron from "../component/Macaron/Shop.jsx"
 import { Link } from 'react-router-dom'
-import image4 from "../assets/picture/image4 copy.png"
+import image4 from "../assets/img/image4 copy.png"
 
 function Contact() {
   return (

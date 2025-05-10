@@ -3,7 +3,7 @@ import "./About.scss"
 import Macaron from "../component/Macaron/Shop.jsx"
 import Present from '../component/present/Present.jsx'
 import { Link } from 'react-router-dom'
-import svg14 from "../assets/picture/14 copy.svg"
+import svg14 from "../assets/img/14 copy.svg"
 
 function About() {
     return (

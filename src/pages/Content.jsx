@@ -3,8 +3,8 @@ import "./Content.scss"
 import { Link } from 'react-router-dom'
 import WorldMap from '../component/worldMap/WorldMap.jsx'
 import Macaron from "../component/Macaron/Shop.jsx"
-import image2 from "../assets/picture/image2 copy.png"
-import image3 from "../assets/picture/image3 copy.png"
+import image2 from "../assets/img/image2 copy.png"
+import image3 from "../assets/img/image3 copy.png"
 
 function Content() {
   return (
